@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:dev="http://devaj/hyd/book" 
+targetNamespace="http://devaj/hyd/book"
+ elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="book" type="dev:bookType"/>
+	<xs:complexType name="bookType">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="price" type="xs:int"/>
+			<xs:element name="quantity" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

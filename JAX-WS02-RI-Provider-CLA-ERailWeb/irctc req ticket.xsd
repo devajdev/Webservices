@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mmt="http://com/nt/req/bindings" targetNamespace="http://com/nt/req/bindings"  elementFormDefault="qualified" attributeFormDefault="unqualified">
+	
+	<xs:element name="BookTicket" type="mmt:BookTicketType"/>
+	<xs:complexType name="BookTicketType">
+		<xs:sequence>
+			<xs:element name="PassengerInfo" type="mmt:PassengerInfoType"/>
+			<xs:element name="JourneyInfo" type="mmt:JourneyInfoType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PassengerInfoType">
+		<xs:sequence>
+			<xs:element name="pNAme" type="xs:string"/>
+			<xs:element name="pAge" type="xs:int"/>
+			<xs:element name="pMobile" type="xs:int"/>			
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="JourneyInfoType">
+		<xs:sequence>
+			<xs:element name="doj" type="xs:date"/>
+			<xs:element name="trainNumber" type="xs:int"/>				
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
+

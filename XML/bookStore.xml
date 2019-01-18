@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Java%20Package/WebServices/XSD/book-store.xsd">
+	<book>
+		<name>WebServices</name>
+		<price>500</price>
+		<quantity>5</quantity>
+	</book>
+	<Author>
+		<name>Devaj</name>
+		<email>devaj04@gmail.com</email>
+	</Author>
+	<publication>
+		<addr>S.R.Nagar</addr>
+		<established-year>2010</established-year>
+	</publication>
+</BookStore>

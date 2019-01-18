@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	
+	<xs:element name="BookStore" type="bookStoreType"/>
+	
+	<xs:complexType name="bookStoreType">
+		<xs:sequence>
+			<xs:element name="book" type="bookType"/>
+			<xs:element name="Author" type="authorType"/>
+			<xs:element name="publication" type="publicationType"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="bookType">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="price" type="xs:int"/>
+			<xs:element name="quantity" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="authorType">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="email" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="publicationType">
+		<xs:sequence>
+			<xs:element name="addr" type="xs:string"/>
+			<xs:element name="established-year" type="xs:int"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+</xs:schema>

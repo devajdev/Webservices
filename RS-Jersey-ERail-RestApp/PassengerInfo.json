@@ -1,0 +1,10 @@
+{
+	"firstName": "Smith",
+	"lastName": "Dean",
+	"gender": null,
+	"email": null,
+	"from": "Hyd",
+	"to": "Banglore",
+	"trainNum": "7979",
+	"journeyDate": "20-Oct-2018"
+}

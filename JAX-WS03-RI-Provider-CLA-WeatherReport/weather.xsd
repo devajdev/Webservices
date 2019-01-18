@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:weather="http://com/nt/req/weather" targetNamespace="http://com/nt/req/weather" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<xs:element name="Weather" type="weather:WeatherType"/>
+	
+	<xs:complexType name="WeatherType">
+		<xs:sequence>
+			<xs:element name="WeatherReport" type="weather:WeatherReportType"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="WeatherReportType">
+		<xs:sequence>
+			<xs:element name="ZipCode" type="xs:int"/>
+			<xs:element name="City" type="xs:string"/>
+			<xs:element name="Country" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

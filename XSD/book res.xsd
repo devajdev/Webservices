@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://com/nt/res/bindings" xmlns:bookRes="http://com/nt/res/bindings" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	
+	<xs:element name="BookRes" type="bookRes:BookResType"/>
+	<xs:complexType name="BookResType">
+		<xs:sequence>
+			<xs:element name="bookId" type="xs:int"/>
+			<xs:element name="Author" type="xs:string"/>
+			<xs:element name="Price" type="xs:double"/>
+			<xs:element name="publicationYear" type="xs:date"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

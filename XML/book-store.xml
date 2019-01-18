@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookStore SYSTEM "D:\Java Package\WebServices\DTD\book-store.dtd">
+<bookStore>
+	<books>
+		<book>
+			<name>Spring</name>
+			<price>500</price>
+			<quantity>5</quantity>
+		</book>
+	</books>
+	<author>
+		<name>Devaj</name>
+		<email>devaj04@gmail.com</email>
+	</author>
+</bookStore>

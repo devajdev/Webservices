@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:irctc="http://com/nt/res/bindings" targetNamespace="http://com/nt/res/bindings" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	
+	<xs:element name="Ticket" type="irctc:TicketType"/>
+	<xs:complexType name="TicketType">
+		<xs:sequence>
+			<xs:element name="pnr" type="xs:int"/>
+			<xs:element name="pNAme" type="xs:string"/>
+			<xs:element name="pAge" type="xs:int"/>
+			<xs:element name="doj" type="xs:date"/>
+			<xs:element name="pMobile" type="xs:int"/>
+			<xs:element name="trainNumber" type="xs:int"/>				
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

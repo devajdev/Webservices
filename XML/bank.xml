@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bankaccount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Java%20Package/WebServices/XSD/bank-group-sequence.xsd">
+	<saving-account>
+		<acc-no>1000</acc-no>
+		<holder-name>Devaj</holder-name>
+		<branch-name>Ameerpet</branch-name>
+		<min-bal>150000</min-bal>
+	</saving-account>
+	<current-account>
+		<acc-no>5000</acc-no>
+		<holder-name>Raja</holder-name>
+		<branch-name>S R Nagar</branch-name>
+		<tx-limit>10000</tx-limit>
+	</current-account>
+</bankaccount>

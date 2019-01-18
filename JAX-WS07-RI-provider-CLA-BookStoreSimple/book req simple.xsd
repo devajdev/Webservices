@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:bookReq="http://com/nt/req/bindings" targetNamespace="http://com/nt/req/bindings" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="bookId" type="xs:int"/>
+</xs:schema>

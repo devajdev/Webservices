@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT author (name, email)>
+<!ELEMENT book (name, price, quantity)>
+<!ELEMENT books (book)>
+<!ELEMENT bookStore (books,author)>

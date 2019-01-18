@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bnak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/Java%20Package/WebServices/XSD/bank.xsd">
+	<account type="saving">
+		<id>100</id>
+		<name>Devaj</name>
+		<amt>5000</amt>
+	</account>
+	<account type="current">
+		<id>500</id>
+		<name>Dev</name>
+		<amt>10000</amt>
+	</account>
+</Bnak>

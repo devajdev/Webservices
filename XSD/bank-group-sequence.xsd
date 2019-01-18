@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<xs:group name="accountDetails">
+		<xs:sequence>
+			<xs:element name="acc-no" type="xs:int"/>
+			<xs:element name="holder-name" type="xs:string"/>
+			<xs:element name="branch-name" type="xs:string"/>
+		</xs:sequence>
+	</xs:group>
+	
+		<xs:element name="bankaccount" type="bankaccountType"/>
+		
+			<xs:complexType name="bankaccountType">
+				<xs:sequence>
+					<xs:element name="saving-account" type="saving-accountType"/>
+					<xs:element name="current-account" type="current-accountType"/>
+				</xs:sequence>				
+			</xs:complexType>
+			
+			<xs:complexType name="saving-accountType">
+				<xs:sequence>
+					<xs:group ref="accountDetails"/>
+					<xs:element name="min-bal" type="xs:int"/>
+				</xs:sequence>
+			</xs:complexType>
+		
+			<xs:complexType name="current-accountType">
+				<xs:sequence>
+					<xs:group ref="accountDetails"/>
+					<xs:element name="tx-limit" type="xs:int"/>
+				</xs:sequence>
+			</xs:complexType>
+			
+</xs:schema>
